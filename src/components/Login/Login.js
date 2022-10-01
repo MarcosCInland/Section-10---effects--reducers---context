@@ -11,6 +11,12 @@ const Login = (props) => {
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
 
+  useEffect(()=>{
+
+  }, []);
+  // if there are no dependencies: it runs everytime component is rendered
+  // if there are dependencies: it runs everytime a dependencie has changed
+
   useEffect(() => {
     const identifier = setTimeout(() => {
       setFormIsValid(
